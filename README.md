@@ -6,13 +6,13 @@ Gets the contents of a file from a public Github repo using the github API.
 
     npm install github-contents
 
-#### usage
+#### example usage
 
 ```javascript
-var githubContents = require('github-contents');
-githubContents('lib/xmlrpc-router.js', function (err, contents) {
+var getContents = require('github-contents');
+getContents('lib/xmlrpc-router.js', function (err, contents) {
     console.log(contents);
- });
+});
 ```
 
 #### pros
@@ -31,6 +31,10 @@ At some point I'd like to add a few more methods / options:
 
 feel free to send PR for the above, other features, etc.
 
+#### testing
+Tests require mocha to be installed.
+
+    $ mocha
 
 #### license
 MIT Style License (see LICENSE.txt)
